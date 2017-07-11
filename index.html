@@ -1,427 +1,592 @@
-/*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
-}
-
-hr {
-    max-width: 50px;
-    border-color: #fff;
-    border-width: 3px;
-}
-
-a {
-    color: #fff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
-
-a:hover,
-a:focus {
-    color: #40637b;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-}
-
-p {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.bg-primary {
-    background-color: #222;
-}
-
-.bg-dark {
-    color: #fff;
-    background-color: #222;
-}
-
-.text-faded {
-    color: rgba(255,255,255,.7);
-}
-
-section {
-    padding: 100px 0;
-}
-
-aside {
-    padding: 50px 0;
-}
-
-.no-padding {
-    padding: 0;
-}
-
-.navbar-default {
-    border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: #fff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
-
-.navbar-default .navbar-header .navbar-brand {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: 700;
-    color: #222;
-}
-
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
-    color: #40637b;
-}
-
-.navbar-default .nav > li>a,
-.navbar-default .nav>li>a:focus {
-    font-size: 13px;
-    font-weight: 700;
-    color: #222;
-}
-
-.navbar-default .nav > li>a:hover,
-.navbar-default .nav>li>a:focus:hover {
-    color: #40637b;
-}
-
-.navbar-default .nav > li.active>a,
-.navbar-default .nav>li.active>a:focus {
-    color: #40637b!important;
-    background-color: transparent;
-}
-
-.navbar-default .nav > li.active>a:hover,
-.navbar-default .nav>li.active>a:focus:hover {
-    background-color: transparent;
-}
-
-@media(min-width:768px) {
-    .navbar-default {
-        border-color: transparent;
-        background-color: transparent;
-    }
-
-    .navbar-default .navbar-header .navbar-brand {
-        font-size: 14px;
-        color: rgba(255,255,255,.7);
-    }
-
-    .navbar-default .navbar-header .navbar-brand:hover,
-    .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
-    }
-
-    .navbar-default .nav > li>a,
-    .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
-    }
-
-    .navbar-default .nav > li>a:hover,
-    .navbar-default .nav>li>a:focus:hover {
-        color: #fff;
-    }
-
-    .navbar-default.affix {
-        border-color: rgba(34,34,34,.05);
-        background-color: #fff;
-    }
-
-    .navbar-default.affix .navbar-header .navbar-brand {
-        font-size: 14px;
-        color: #222;
-    }
-
-    .navbar-default.affix .navbar-header .navbar-brand:hover,
-    .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #40637b;
-    }
-
-    .navbar-default.affix .nav > li>a,
-    .navbar-default.affix .nav>li>a:focus {
-        color: #222;
-    }
-
-    .navbar-default.affix .nav > li>a:hover,
-    .navbar-default.affix .nav>li>a:focus:hover {
-        color: #40637b;
-    }
-}
-
-header {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    text-align: center;
-    color: #fff;
-    background-image: url(../img/bg.jpg);
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-header .Index-Header{
-
-
-}
-header .press-Header{
-  height:20%;
-
-    background-color: #000000;
-
-}
-header .header-content {
-    position: relative;
-    width: 100%;
-    padding: 100px 15px;
-    text-align: center;
-}
-
-header .header-content .header-content-inner h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 700;
-}
-
-header .header-content .header-content-inner hr {
-    margin: 30px auto;
-}
-
-header .header-content .header-content-inner p {
-    margin-bottom: 50px;
-    font-size: 16px;
-    font-weight: 300;
-    color: rgba(255,255,255,.7);
-}
-
-@media(min-width:768px) {
-    header {
-        min-height: 100%;
-    }
-
-    header .header-content {
-        position: absolute;
-        top: 50%;
-        padding: 0 50px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-
-    header .header-content .header-content-inner {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 1000px;
-    }
-
-    header .header-content .header-content-inner p {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 80%;
-        font-size: 18px;
-    }
-}
-
-.section-heading {
-    margin-top: 0;
-}
-
-.service-box {
-    margin: 50px auto 0;
-    max-width: 400px;
-}
-
-@media(min-width:992px) {
-    .service-box {
-        margin: 20px auto 0;
-    }
-}
-
-.service-box p {
-    margin-bottom: 0;
-}
-
-.service-box a .btn {
-    color: #222;
-}
-
-.service-box h4 {
-    color: #fff;
-}
-
-.service-box a:hover,
-a:focus:hover .btn {
-    color: #40637b;
-}
-
-.service-box a:hover,
-a:focus:hover .btn {
-    color: #40637b;
-}
-
-.img-rounded{
-  width: 242px;
-  height:350px;
-  align-items: center;
-}
-.blur-box {
-    margin: 10px auto 10px;
-    max-width: 300px;
-    align-items: center;
-}
-
-.blur-box p {
-  color: #222;
-  font-size: 12px;
-  text-align: justify;
-}
-
-.call-to-action h2 {
-    margin: 0 auto 20px;
-}
-
-.text-primary {
-    color: #222;
-}
-
-.no-gutter > [class*=col-] {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-
-.btn-primary {
-    border-color: #fff;
-    color: #222;
-    background-color: #fff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-    border-color: #f2f2f2;
-    color: #222;
-    background-color: #f2f2f2;
-}
-
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-    background-image: none;
-}
-
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus,
-.btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-    border-color: #40637b;
-    background-color: #40637b;
-}
-
-
-.btn {
-    border: 0;
-    border-radius: 300px;
-    /*text-transform: uppercase;*/
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: 700;
-}
-
-.btn-xl {
-    padding: 15px 30px;
-}
-
-.btn-space {
-    margin-bottom: 10px;
-}
-
-::-moz-selection {
-    text-shadow: none;
-    color: #fff;
-    background: #222;
-}
-
-::selection {
-    text-shadow: none;
-    color: #fff;
-    background: #222;
-}
-
-img::selection {
-    color: #fff;
-    background: 0 0;
-}
-
-img::-moz-selection {
-    color: #fff;
-    background: 0 0;
-}
-
-body {
-    webkit-tap-highlight-color: #222;
-}
-
-footer {
-		background-color:#222;
-    color:#ddd;
-    min-height:100px;
-    padding-top:20px;
-    padding-bottom:40px;
-    font-size: 12px;
-}
-
-footer .nav>li>a {
-    padding:3px;
-    color:#ccc;
-}
-
-footer .nav>li>a:hover {
-  background-color:transparent;
-  color:#fff;
-}
-
-.navbar-collapse-press
-{
-  background-color: black;
-
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ganga Bharani</title>
+
+    <!-- core -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+
+    <!-- app -->
+    <link rel="stylesheet" href="css/app.css" type="text/css">
+
+    <!-- third party -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="home">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#home">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#books">Fiction</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#kindle">Creative Writing Books</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="Press.html">Press</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header class="Header">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h2>Ganga Bharani Vasudevan</h2>
+                <p>
+                   Author| Plot Coach| Film Writer
+                </p>
+
+            <p style="text-align: justify;">
+                      I have written a few novels and a lot of plot coaching books. I am a plot coach with a target to help 100 authors this year with their story building and publishing processes.
+                      To get your first free session booked, write to gangabharaniv@gmail.com.
+                      <br/>
+                </p>
+
+                <div class="row" style="text-align: center;">
+                    <!--fontawesome icons-->
+                    <div class="col-lg-1 col-lg-offset-4 col-xs-4 text-center">
+                     	<a target="_blank" href="https://www.facebook.com/authorganga"><i class="fa fa-facebook-square fa-3x"></i></a>
+                    </div>
+
+                    <div class="col-lg-1 col-xs-4 text-center">
+                     	<a target="_blank" href="https://twitter.com/ganga_bharani"><i class="fa fa-twitter-square fa-3x"></i></a>
+                    </div>
+                    <div class="col-lg-1 col-xs-4 text-center">
+                    	<a target="_blank" href="https://www.youtube.com/user/vgangabharani"><i class="fa fa-youtube-play fa-3x"></i></a>
+                    </div>
+
+                    <div class="col-lg-1 col-lg-offset--3 col-xs-4 text-center">
+                     	<a target="_blank" href="http://scribbledbygb.blogspot.in/"><i class="fa fa-rss-square fa-3x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+      <section class="bg-primary" id="kindle">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2 class="section-heading">Creative Writing Guides</h2>
+                      <hr class="primary">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                      <div class="row">
+                        <a role="button" data-toggle="collapse" href="#6prompts" aria-expanded="false" aria-controls="aminute">
+                          <img src="img/books/6prompts-k.jpg" alt="" class="img-rounded">
+                        </a>
+                      </div>
+                      <hr class="primary">
+                      <div class="row">
+                        <h4>60 Creative Writing Prompts and Plots</h4>
+                      </div>
+                      <div class="row">
+                        <div class="collapse" id="6prompts">
+                          <div class="well blur-box">
+                            <p>As writers, we all want to tell stories and keep the readers engaged. In this book you will find 60 prompts. This is not like the other prompt books that you find in the market where they just list one liners as a prompt. In this book you will be given prompts or plots and ways to develop them into various genres. These prompts will not just create a spark in you to create your own story but also guide you to twist and turn them into a story you will be comfortable writing.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-3 col-lg-offset-3 col-sm-12 text-center">
+                          <a target="_blank" href="#" class="btn btn-primary btn-sm btn-space">Sample</a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 text-center">
+                          <a target="_blank" href="http://myBook.to/SMbook1" class="btn btn-primary btn-sm btn-space">Amazon</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                      <div class="row">
+                        <a role="button" data-toggle="collapse" href="#book2" aria-expanded="false" aria-controls="sipoflove">
+                          <img src="img/books/book2.jpg" alt="" class="img-rounded">
+                        </a>
+                      </div>
+                      <hr class="primary">
+                      <div class="row">
+                        <h4>Creative Writing Workbook</h4>
+                      </div>
+                      <div class="row">
+                        <div class="collapse" id="book2">
+                          <div class="well blur-box">
+                            <p>
+                              Every story is a collection of words put together in the right order with a hand full of punctuations here and there. When it’s a love story there can only be two people falling in love, either happily end the book or make it a tragedy. But then how can each story be different from the other? It’s the characters, setting, plot and the order of happenings that make one story different from the other. That makes every one of you develop a plot into a story that’s entirely different from the other. This book will provide you with a list of creative plots that can be twisted and turned into several stories. This book will serve as a story guide.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-3 col-lg-offset-3 col-sm-12 text-center">
+                          <a target="_blank" href="#" class="btn btn-primary btn-sm btn-space">Sample</a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 text-center">
+                          <a target="_blank" href="http://myBook.to/SMBook2" class="btn btn-primary btn-sm btn-space">Amazon</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                      <div class="row">
+                        <a role="button" data-toggle="collapse" href="#bundle" aria-expanded="false" aria-controls="bundle">
+                          <img src="img/books/bundle-k.jpg" alt="" class="img-rounded">
+                        </a>
+                      </div>
+                      <hr class="primary">
+                      <div class="row">
+                        <h4>Story Ideas For Writers</h4>
+                      </div>
+                      <div class="row">
+                        <div class="collapse" id="bundle">
+                          <div class="well blur-box">
+                            <p>This book has 1000+ story ideas. There are 80 prompts and the ways to twist them into different genres. Also has prompts for genres like Romance, Paranormal, Horror and so on.
+                              <br/> This has enough ideas to serve you for the next few years.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-3 col-lg-offset-3 col-sm-12 text-center">
+                          <a target="_blank" href="#" class="btn btn-primary btn-sm btn-space">Sample</a>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 text-center">
+                          <a target="_blank" href="https://www.amazon.com/gp/product/B06ZYC1LYK/ref=series_rw_dp_sw" class="btn btn-primary btn-sm btn-space">Amazon</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 text-center">
+                  <div class="service-box">
+                    <div class="row">
+                      <a role="button" data-toggle="collapse" href="#romance" aria-expanded="false" aria-controls="romance">
+                        <img src="img/books/romance.jpg" alt="" class="img-rounded">
+                      </a>
+                    </div>
+                    <hr class="primary">
+                    <div class="row">
+                      <h4>Story Machine: Romance</h4>
+                    </div>
+                    <div class="row">
+                      <div class="collapse" id="romance">
+                        <div class="well blur-box">
+                          <p>A collection of romance prompts that can server as story seeds for you to build a story with it. You are free to use these prompts.
+                            <br/> Write your next romance best seller with the help of this book.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3 col-lg-offset-3 col-sm-12 text-center">
+                        <a target="_blank" href="#" class="btn btn-primary btn-sm btn-space">Sample</a>
+                      </div>
+                      <div class="col-lg-3 col-sm-12 text-center">
+                        <a target="_blank" href="http://mybook.to/SMRomance" class="btn btn-primary btn-sm btn-space">Amazon</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 text-center">
+                  <div class="service-box">
+                    <div class="row">
+                      <a role="button" data-toggle="collapse" href="#horror" aria-expanded="false" aria-controls="horror">
+                        <img src="img/books/horror.jpg" alt="" class="img-rounded">
+                      </a>
+                    </div>
+                    <hr class="primary">
+                    <div class="row">
+                      <h4>Story Machine: Horror</h4>
+                    </div>
+                    <div class="row">
+                      <div class="collapse" id="horror">
+                        <div class="well blur-box">
+                          <p>A collection of horror prompts that can server as story seeds for you to build a story with it. You are free to use these prompts.
+                            <br/> Write your next horror best seller with the help of this book.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3 col-lg-offset-3 col-sm-12 text-center">
+                        <a target="_blank" href="#" class="btn btn-primary btn-sm btn-space">Sample</a>
+                      </div>
+                      <div class="col-lg-3 col-sm-12 text-center">
+                        <a target="_blank" href="http://myBook.to/SMHPromps" class="btn btn-primary btn-sm btn-space">Amazon</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 text-center">
+                  <div class="service-box">
+                    <div class="row">
+                      <a role="button" data-toggle="collapse" href="#thriller" aria-expanded="false" aria-controls="thriller">
+                        <img src="img/books/thriller.jpg" alt="" class="img-rounded">
+                      </a>
+                    </div>
+                    <hr class="primary">
+                    <div class="row">
+                      <h4>Story Machine: Thriller</h4>
+                    </div>
+                    <div class="row">
+                      <div class="collapse" id="thriller">
+                        <div class="well blur-box">
+                          <p>A collection of thriller prompts that can server as story seeds for you to build a story with it. You are free to use these prompts.
+                            <br/> Write your next thriller best seller with the help of this book.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3 col-lg-offset-3 col-sm-12 text-center">
+                        <a target="_blank" href="#" class="btn btn-primary btn-sm btn-space">Sample</a>
+                      </div>
+                      <div class="col-lg-3 col-sm-12 text-center">
+                        <a target="_blank" href="http://myBook.to/SMThriller" class="btn btn-primary btn-sm btn-space">Amazon</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>            <div class="col-lg-4 col-md-6 text-center">
+                              <div class="service-box">
+                                <div class="row">
+                                  <a role="button" data-toggle="collapse" href="#para" aria-expanded="false" aria-controls="para">
+                                    <img src="img/books/paranormal.jpg" alt="" class="img-rounded">
+                                  </a>
+                                </div>
+                                <hr class="primary">
+                                <div class="row">
+                                  <h4>Story Machine: Paranormal Romance</h4>
+                                </div>
+                                <div class="row">
+                                  <div class="collapse" id="romance">
+                                    <div class="well blur-box">
+                                      <p>A collection of paranormal romance prompts that can server as story seeds for you to build a story with it. You are free to use these prompts.
+                                        <br/> Write your next paranormal romance best seller with the help of this book.An analysis of the subcategories under paranormal category in amazon is included.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-lg-3 col-lg-offset-3 col-sm-12 text-center">
+                                    <a target="_blank" href="#" class="btn btn-primary btn-sm btn-space">Sample</a>
+                                  </div>
+                                  <div class="col-lg-3 col-sm-12 text-center">
+                                    <a target="_blank" href="http://myBook.to/SMPara" class="btn btn-primary btn-sm btn-space">Amazon</a>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+            </div>
+        </section>
+        <section class="bg-primary" id="books">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Fiction</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+
+                <div class="row">
+
+                  <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <div class="row">
+                          <a role="button" data-toggle="collapse" href="#justyoume" aria-expanded="false" aria-controls="justyoume">
+
+                            <img src="img/books/justume-k.jpg" alt="" class="img-rounded">
+                          </a>
+                        </div>
+                        <hr class="primary">
+                        <div class="row">
+
+                          <h4>Just You Me and a Secret</h4>
+                        </div>
+                        <div class="row">
+                          <div class="collapse" id="justyoume">
+                            <div class="well blur-box">
+                              <p>Amnesiac Meera wants to discover her past. Engaged to Ashruth, who is also her doctor, she is tempted to run away and forge a new life as she wonders how she ever fell in love with him. Starting life afresh, she decides to give him a chance and explore more about her past in the meanwhile. Reading a diary that she had written before the accident, she learns why she fell for Ashruth but her feelings seem to have changed now. She learns that her dad, Prabhu, is a rich business man living happily with her mom, Nadhiya. Most of her diary pages are filled with memories of Santhosh, her cousin. As she reads about Santhosh and his role in her past life, she starts to like him.
+
+    Ashruth decides to leave Meera at her parent’s residence until their wedding, which is a month away. He tells them that she is like a blank paper and anything that affects her will get imprinted in her. Like a book or a movie, if it affects her deeply, it might make her assume it’s her past. Though she is introduced to her mother and father, she finds herself incapable of trusting them.
+
+    Santhosh, her cousin, grew up in her house as he had lost his parents to a car accident at a young age. She understands from her diary that he was her best friend, right from childhood. As she browses the old videos and photos, her admiration and respect for Santhosh are rekindled. She doubts whether she was in love with Santhosh and whether she has carried her love from her past.
+
+    Will she call off her wedding despite knowing the societal consequences? Will she fall for Santhosh? What if she is married to one of the two and gains her memory later? If she was actually in love with Santhosh, why are people hiding it from her?</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-3 col-lg-offset-3 col-sm-2 text-center">
+                          	<a target="_blank" href="http://mybook.to/jyms" class="btn btn-primary btn-sm btn-space">Amazon</a>
+                          </div>
+                          <div class="col-lg-3 col-sm-12 text-center">
+                            <a target="_blank" href="#" class="btn btn-primary btn-sm btn-space">Sample</a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <div class="row">
+                          <a role="button" data-toggle="collapse" href="#murder" aria-expanded="false" aria-controls="murder">
+
+                            <img src="img/books/Murder-k.jpg" alt="" class="img-rounded">
+                          </a>
+                        </div>
+                        <hr class="primary">
+                        <div class="row">
+
+                          <h4>Murder In The Elevator</h4>
+                        </div>
+                        <div class="row">
+                          <div class="collapse" id="murder">
+                            <div class="well blur-box">
+                              <p>Arjun, an employee of KT Towers, pressed the elevator button and was waiting for it in floor six. There was a power cut, two different screams were heard. Power resumed. When the elevator arrived and the door opened, he saw Vicky, the CEO, lying in a pool of blood. Geeth, Vicky's secretary, was inside the elevator.
+    The weapon used to slit Vicky's throat was not found. Geeth claims to be innocent. Could someone get into a closed elevator, during a power cut, to kill someone? Even if so, how could the person escape from there within five minutes without being noticed by people or the CCTV?
+
+    Kushal, a cop, tries to uncover the mystery behind this murder with writer Diya. Eventually, they fall in love.
+    A murder mystery with an undercurrent of a beautiful romance between the cop and the writer.
+
+
+    Kushal, a cop, and his girlfriend, Diya, a writer, try to solve this murder mystery.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-3 col-lg-offset-3 col-sm-2 text-center">
+                            <a target="_blank" href="http://mybook.to/mite1" class="btn btn-primary btn-sm btn-space">Amazon</a>
+                          </div>
+                          <div class="col-lg-3 col-sm-12 text-center">
+                            <a target="_blank" href="#" class="btn btn-primary btn-sm btn-space">Sample</a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="row">
+
+                  <div class="col-lg-4 col-md-4 text-center">
+                      <div class="service-box">
+                        <div class="row">
+                          <a role="button" data-toggle="collapse" href="#aminute" aria-expanded="false" aria-controls="aminute">
+                            <img src="img/books/minutetodeath-b.jpg" alt="" class="img-rounded">
+                          </a>
+                        </div>
+                        <hr class="primary">
+                        <div class="row">
+                            <h4>A Minute to Death</h4>
+                        </div>
+                        <div class="row">
+                          <div class="collapse" id="aminute">
+                            <div class="well blur-box">
+                              <p>Young, vivacious and an aspiring writer, Riya wants nothing more from her longtime crush/boyfriend than to let her in on one of his exciting investigations. After all, what better source material for a book than a real life tragedy? No-nonsense veteran cop, Rohan picks a case of probable suicide to satisfy Riya's needs. Little does he know that there is more to this case than meets the eye. What made the victim hang herself at the break of dawn? What is the secret that her group of friends is hiding? Will Riya be able to salvage a workable plot for her upcoming novel out of this case of seemingly simple suicide?</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-3 col-lg-offset-3 col-sm-12 text-center">
+                            <a target="_blank" href="http://www.amazon.in/dp/9384315079/" class="btn btn-primary btn-sm btn-space">Amazon</a>
+                          </div>
+                          <div class="col-lg-3 col-sm-12 text-center">
+                            <a target="_blank" href="#" class="btn btn-primary btn-sm btn-space">Flipkart</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 text-center">
+                      <div class="service-box">
+                        <div class="row">
+                          <a role="button" data-toggle="collapse" href="#sipoflove" aria-expanded="false" aria-controls="sipoflove">
+                            <img src="img/books/sipoflove-b.jpg" alt="" class="img-rounded">
+                          </a>
+                        </div>
+                        <hr class="primary">
+                        <div class="row">
+                            <h4>A Sip of Love and a Sip of Coffee</h4>
+                        <div>
+                        <div class="row">
+                          <div class="collapse" id="sipoflove">
+                            <div class="well blur-box">
+                              <p>   How many years did you have to wait to find true love? Avanthika didn’t have to wait too long. She met Gautham right at the age of ten and fell in love with him right at the first sight. She had no idea the way this guy was going to change her life.
+    (Gautham: Come on! Any relationship with a girl be it love or marriage, changes guys’ life not the girls’. Ask any man out there and edit your blurb accordingly.
+    Author: Relationships change people and when it is love or marriage it brings in a positive change to one’s life. I was trying to hide the quarrels that we had throughout the book from the readers but you did not give me a choice. Now, jump into the book or you will be found and replaced throughout the book by a different guy. )
+
+    Avanthika was a love-one-guy-all-through-life kind of girl.  Gautham was love-a-girl-sincerely-then-move-on-to-the-next-and-start-being-sincere-allover-again kind of guy. Though they were poles apart, no one could imagine them without each other. They remained such close friends for years together.  Before she could express her feelings to him at the age of sixteen, he proposes Avanthika’s good looking close friend. And before she could digest this, he breaks up with her and proposes Avanthika. Though he isn’t sure of anything they get into a relationship. Eventually he falls for her.
+    Will they retain the love till they become adults? Will maturity kill their puppy love? Will they move apart with the tide of time?
+
+    A story of how a puppy love transforms into a strong relationship as it collects maturity in its journey with time.  </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-3  col-lg-offset-3 col-sm-12 text-center">
+                            <a target="_blank" href="http://www.amazon.in/dp/B0144ATIW2/" class="btn btn-primary btn-sm btn-space">Amazon</a>
+                          </div>
+                          <div class="col-lg-3 col-sm-12 text-center">
+                            <a target="_blank" href="#" class="btn btn-primary btn-sm btn-space">Flipkart</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+        <section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <div class="col-lg-4 col-sm-12">
+              <a href="#" class="text-align center">
+                <img class="img-thumbnail" src="img/profile.jpg" alt="...">
+              </a>
+            </div>
+          </div>
+            <div class="text-center"><h2 class="section-heading">Author Bio</h2><div>
+                <hr class="primary">
+                <p class="text-faded">
+                Ganga Bharani is an Engineering graduate who chose to write books like many other Engineers turned writers.
+                Having published three novels, she is currently writing her fourth sitting in Chennai, an Indian City.
+                Plots and prompts rushing to her are penned down into a series of books titled ‘Creative Writing Prompts and Plots’.
+                </p>
+                <p class="text-faded"> She started her writing career with opinion pieces to newspapers, then tried her hands at blogging,
+                which led to her winning the BEST URBAN CHENNAI BLOGGER Award. Her playful attempt at making short films has churned out ten such short films about social issues.
+                Two of her short films about inclusion of differently abled won Best Film Award and Special Mention Award at WE CARE international film festival.
+                She is now into script writing for feature films and web series. She also works with a leading MNC as an IT Engineer.
+                </p>
+                <p class="text-faded">
+                In short, she is a simple girl with complicated dreams
+                </p>
+                <div class="text-center"><a href="http://scribbledbygb.blogspot.in/" class="btn btn-default btn-xl allign-center">Blog</a></div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Get in touch</h2>
+                    <hr class="primary">
+                    <p>Behind every successful person there are people, a lot of them. I respect each and everyone who contributes to every inch I move ahead. Your email can change this author's day into a meaningful one. Read any of my books? Mail me about it to gangabharaniv@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <div class="col-lg-8 col-sm-12 text-left">
+
+    <footer id="footer">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-xs-6">
+              <h4>Site Map</h4>
+              <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-6">
+              <h4>Media</h4>
+              <ul class="nav">
+                <li><a href="http://scribbledbygb.blogspot.in/p/articles-published-in-newspapers.html">Newspaper Articles</a></li>
+                  <li><a href="http://scribbledbygb.blogspot.in/2015/07/urbanchennai-bloggers-meet-with-ecovme.html#more">Awards</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-6">
+              <h4>Follow</h4>
+              <ul class="nav">
+                <li><a href="https://www.facebook.com/authorganga"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                <li><a href="https://twitter.com/ganga_bharani"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-xs-6">
+              <h4>Subscribe</h4>
+              <ul class="nav">
+                <li><a href="#"><i class="fa fa-youtube-play fa-2x"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss-square fa-2x"></i></a></li>
+              </ul>
+            </div>
+        </div><!--/row-->
+      </br>
+        <div class="row">
+          <div class="col-lg-12">
+          <p class="text-left text-muted">Copyright &copy; Scribbled by GB - 2016. All Rights Reserved.</p>
+          </div>
+
+        </div><!--/row-->
+      </div>
+      </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
