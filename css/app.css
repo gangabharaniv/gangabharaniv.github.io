@@ -278,7 +278,11 @@ a:focus:hover .btn {
 a:focus:hover .btn {
     color: #40637b;
 }
-
+img .img-rounded{
+  width: 242px;
+  height:350px;
+  align-items: center;
+}
 .img-rounded{
   width: 242px;
   height:350px;
