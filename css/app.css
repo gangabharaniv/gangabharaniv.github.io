@@ -180,7 +180,16 @@ header {
     background-size: cover;
     -o-background-size: cover;
 }
+header .Index-Header{
 
+
+}
+header .press-Header{
+  height:20%;
+
+    background-color: #000000;
+
+}
 header .header-content {
     position: relative;
     width: 100%;
@@ -270,16 +279,21 @@ a:focus:hover .btn {
     color: #40637b;
 }
 
-
-
+.img-rounded{
+  width: 242px;
+  height:350px;
+  align-items: center;
+}
 .blur-box {
     margin: 10px auto 10px;
     max-width: 300px;
+    align-items: center;
 }
 
 .blur-box p {
   color: #222;
   font-size: 12px;
+  text-align: justify;
 }
 
 .call-to-action h2 {
@@ -404,4 +418,10 @@ footer .nav>li>a {
 footer .nav>li>a:hover {
   background-color:transparent;
   color:#fff;
+}
+
+.navbar-collapse-press
+{
+  background-color: black;
+
 }
